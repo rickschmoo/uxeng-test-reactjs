@@ -66,11 +66,11 @@ gulp.task('scripts', function() {
 
 // REACT SCRIPTS
 // COMPILE JSX
-/* gulp.task('react', function () {
+gulp.task('react', function () {
     return gulp.src(paths.jsxsrc)
         .pipe(react())
-        .pipe(gulp.dest('jsdest'));
-}); */
+        .pipe(gulp.dest(paths.jsdest));
+});
 
 // Vendor scripts
 gulp.task('vendor', function() {
@@ -99,6 +99,6 @@ gulp.task('watch', function() {
    // gulp.watch('bower_components/**', ['vendor'])
 })
 
-gulp.task('dev', ['html', 'jshint', 'scripts', 'vendor', 'styles', 'assets', 'watch']);
+gulp.task('dev', ['html', 'react', 'jshint', 'scripts', 'vendor', 'styles', 'assets', 'watch']);
 
 

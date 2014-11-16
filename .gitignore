@@ -3,6 +3,7 @@ node_modules
 bower_components
 www
 build
+.DS_Store
 npm-debug.log
 dist
 
